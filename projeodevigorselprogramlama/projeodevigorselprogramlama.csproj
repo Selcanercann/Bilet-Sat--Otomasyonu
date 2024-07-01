@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B3ABC90-A466-4631-9BB5-83DB97F2C023}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>projeodevigorselprogramlama</RootNamespace>
+    <AssemblyName>projeodevigorselprogramlama</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anaform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anaform.Designer.cs">
+      <DependentUpon>Anaform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="faturalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="faturalar.Designer.cs">
+      <DependentUpon>faturalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gelirgider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gelirgider.Designer.cs">
+      <DependentUpon>gelirgider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mesajlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mesajlar.Designer.cs">
+      <DependentUpon>mesajlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="otobuskayt listesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="otobuskayt listesi.Designer.cs">
+      <DependentUpon>otobuskayt listesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otobüstipi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otobüstipi.Designer.cs">
+      <DependentUpon>Otobüstipi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanicikayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanicikayit.Designer.cs">
+      <DependentUpon>kullanicikayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteriler.Designer.cs">
+      <DependentUpon>Musteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel_Maaş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel_Maaş.Designer.cs">
+      <DependentUpon>Personel_Maaş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stoklar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stoklar.Designer.cs">
+      <DependentUpon>stoklar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yılanoyunu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yılanoyunu.Designer.cs">
+      <DependentUpon>yılanoyunu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Şifreyi güncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Şifreyi güncelle.Designer.cs">
+      <DependentUpon>Şifreyi güncelle.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Anaform.resx">
+      <DependentUpon>Anaform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="faturalar.resx">
+      <DependentUpon>faturalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gelirgider.resx">
+      <DependentUpon>gelirgider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mesajlar.resx">
+      <DependentUpon>mesajlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="otobuskayt listesi.resx">
+      <DependentUpon>otobuskayt listesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otobüstipi.resx">
+      <DependentUpon>Otobüstipi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanicikayit.resx">
+      <DependentUpon>kullanicikayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteriler.resx">
+      <DependentUpon>Musteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel_Maaş.resx">
+      <DependentUpon>Personel_Maaş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="stoklar.resx">
+      <DependentUpon>stoklar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yılanoyunu.resx">
+      <DependentUpon>yılanoyunu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Şifreyi güncelle.resx">
+      <DependentUpon>Şifreyi güncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giriş.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12Adsız.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12Adsız1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Previous-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\handshake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kullanıcı.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accomodation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kullanıcı1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\koltukk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game-controller-gac5e43bf1_640.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game-g36111d838_640.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anasayfa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\müsteriler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aramaikonu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\güncelle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\göz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\başlat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\temizle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mesaj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\otobus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9ac2edc103c4996797bce7a2c45acc13.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çıkış.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %284%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bus-animation-1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2811%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2812%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2813%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2814%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2815%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2815%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2816%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2817%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2818%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gazatesözcü.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gazetesbah.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\akşamgazete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hüriyet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onedio.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gazetesbah1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2819%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2820%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9ac2edc103c4996797bce7a2c45acc131.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2821%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2822%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2823%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2824%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
